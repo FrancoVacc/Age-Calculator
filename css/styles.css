@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Poppins Regular";
+  src: url(/assets/fonts/Poppins-Regular.ttf);
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Poppins Italic";
+  src: url(/assets/fonts/Poppins-Italic.ttf);
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins italic bold";
+  src: url(/assets/fonts/Poppins-BoldItalic.ttf);
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins italic bold";
+  src: url(/assets/fonts/Poppins-ExtraBoldItalic.ttf);
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins bold";
+  src: url(/assets/fonts/Poppins-Bold.ttf);
+  font-weight: 500;
+  font-style: bold;
+}
+@font-face {
+  font-family: "Poppins extra bold";
+  src: url(/assets/fonts/Poppins-ExtraBold.ttf);
+  font-weight: 900;
+  font-style: bold;
+}
+body {
+  background-color: rgb(240, 240, 240);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 1rem;
+  background-color: #fff;
+  width: 90%;
+  margin: 5rem auto;
+  border-radius: 1rem 1rem 5rem 1rem;
+}
+.container .date {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.container .date div {
+  max-width: 150px;
+}
+.container .date div label {
+  font-size: 0.6rem;
+  font-family: "Poppins bold";
+  color: rgb(121, 121, 121);
+  letter-spacing: 2px;
+}
+.container .date div input {
+  width: 80%;
+  padding: 0.5rem;
+  font-family: "Poppins bold";
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 2px solid rgb(240, 240, 240);
+  outline: none;
+}
+.container .date div input:focus {
+  outline: none !important;
+  border: 1px solid rgb(134, 77, 254);
+}
+.container .calcular {
+  width: 100%;
+  padding: 1rem 0.5rem;
+}
+.container .calcular .hr {
+  border: 1px solid rgb(240, 240, 240);
+}
+.container .calcular button {
+  position: relative;
+  top: -1.5rem;
+  left: 40%;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem;
+  margin: auto;
+  border-radius: 50%;
+  border-style: none;
+  background-color: rgb(134, 77, 254);
+}
+.container .calcular button:hover {
+  background-color: rgb(21, 21, 21);
+}
+.container .calcular button img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+@media (min-width: 769px) {
+  .container .calcular button {
+    left: 100%;
+    top: -2rem;
+    width: 4rem;
+    height: 4rem;
+  }
+  .container .calcular button img {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+.container .year-calculator {
+  width: 100%;
+}
+.container .year-calculator div p {
+  font-family: "Poppins italic bold";
+  font-weight: 900;
+  font-size: 2.6rem;
+}
+.container .year-calculator div p span {
+  color: rgb(134, 77, 254);
+}
+@media (min-width: 769px) {
+  .container .year-calculator div p {
+    font-size: 4rem;
+  }
+}
+.container .error-line {
+  border: 1px solid rgb(238, 144, 144) !important;
+}
+.container .error-font {
+  color: rgb(238, 144, 144) !important;
+}
+@media (min-width: 769px) {
+  .container {
+    width: 60%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

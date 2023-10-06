@@ -1,0 +1,118 @@
+@import "normalize";
+@import "variables";
+
+body{
+    background-color: rgb(240 240 240);
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+    background-color: #fff;
+    width: 90%;
+    margin: 5rem auto;
+    border-radius: 1rem 1rem 5rem 1rem;
+
+    .date{
+        display: flex;
+        width: 100%;
+        margin-bottom: 1rem;
+
+        div{
+            max-width: 150px;
+            label{
+                font-size: .6rem;
+                font-family: "Poppins bold";
+                color: $form-font-color;
+                letter-spacing: 2px;
+            }
+            input{
+                width: 80%;
+                padding: .5rem;
+                font-family: "Poppins bold";
+                font-size: 1rem;
+                border-radius: 5px;
+                border: 2px solid $form-line-color;
+                outline: none;
+
+                &:focus{
+                    outline: none !important;
+                    border: 1px solid rgb(134 77 254);
+                }
+            }
+        }
+    }
+
+    .calcular{
+        width: 100%;
+        padding: 1rem .5rem;
+
+        .hr{
+            border: 1px solid rgb(240 240 240);
+        }
+
+        button{
+            position: relative;
+            top: -1.5rem;
+            left: 40%;
+            width: 3rem;
+            height: 3rem;
+            padding: .5rem;
+            margin: auto;
+            border-radius: 50%;
+            border-style: none;
+            background-color: $second-font-color;
+
+            &:hover{
+                background-color: $font-color;
+            }
+
+            img{
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+            @media (min-width:769px){
+                left:100%;
+                top: -2rem;
+                width: 4rem;
+                height: 4rem;
+
+                img{
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+        }
+
+    }
+
+    .year-calculator{
+        width: 100%;
+        div{
+            p{
+                font-family: "Poppins italic bold";
+                font-weight: 900;
+                font-size: 2.6rem;
+                span{
+                    color:$second-font-color
+                }
+                @media (min-width:769px){
+                    font-size: 4rem;
+                }
+            }
+        }
+
+    }
+    .error-line{
+        border: 1px solid $error-line-color !important;
+    }
+
+    .error-font{
+        color: $error-font-color !important;
+    }
+    @media (min-width:769px){
+        width: 60%;
+    }
+}
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age-Calculator</title>
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+
+        <form id="calcular">
+            <div class="date">
+                <div class="date-field"> 
+                    <label for="day" id="day-label">DAY</label>
+                    <input type="text" name="day" id="day" placeholder="DD">
+                </div>
+                <div class="date-field"> 
+                    <label for="month" id="month-label">MONTH</label>
+                    <input type="text" name="month" id="month" placeholder="MM">
+                </div>
+                <div class="date-field"> 
+                    <label for="year" id="year-label">YEAR</label>
+                    <input type="text" name="year" id="year" placeholder="AAAA">
+                </div>
+            </div>
+            <div class="calcular">
+                <div class="hr"></div>
+                <button >
+                    <img src="/assets/images/icon-arrow.svg" alt="">
+                </button>
+            </div>
+        </form>
+
+
+        <div class="year-calculator">
+            <div class="calculator-years">
+                <p><span id="year-span">--</span> years</p>
+            </div>
+            <div class="calculator-month">
+                <p><span id="month-span">--</span> month</p>
+            </div>
+            <div class="calculator-day">
+                <p><span id="day-span">--</span> days</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js" type="module"></script>
+</body>
+</html>
