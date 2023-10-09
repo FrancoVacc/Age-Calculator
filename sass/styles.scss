@@ -111,6 +111,13 @@ body{
     .error-font{
         color: $error-font-color !important;
     }
+    .error-label{
+        font-size: .7rem;
+        margin-top: .5rem;
+        font-family: "Poppins Italic";
+        font-weight: 100;
+        color: $error-font-color;
+    }
     @media (min-width:769px){
         width: 60%;
     }

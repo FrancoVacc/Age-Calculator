@@ -139,6 +139,13 @@ body {
 .container .error-font {
   color: rgb(238, 144, 144) !important;
 }
+.container .error-label {
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+  font-family: "Poppins Italic";
+  font-weight: 100;
+  color: rgb(238, 144, 144);
+}
 @media (min-width: 769px) {
   .container {
     width: 60%;

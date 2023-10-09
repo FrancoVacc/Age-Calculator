@@ -14,15 +14,18 @@
             <div class="date">
                 <div class="date-field"> 
                     <label for="day" id="day-label">DAY</label>
-                    <input type="text" name="day" id="day" placeholder="DD">
+                    <input type="text" name="day" id="day" placeholder="DD" minlength="2" maxlength="2">
+                    <p id="error-day" class="error-label"></p>
                 </div>
                 <div class="date-field"> 
                     <label for="month" id="month-label">MONTH</label>
-                    <input type="text" name="month" id="month" placeholder="MM">
+                    <input type="text" name="month" id="month" placeholder="MM" minlength="2" maxlength="2">
+                    <p id="error-month" class="error-label"></p>
                 </div>
                 <div class="date-field"> 
                     <label for="year" id="year-label">YEAR</label>
-                    <input type="text" name="year" id="year" placeholder="AAAA">
+                    <input type="text" name="year" id="year" placeholder="AAAA" minlength="4" maxlength="4">
+                    <p id="error-year" class="error-label"></p>
                 </div>
             </div>
             <div class="calcular">
